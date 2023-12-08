@@ -1,0 +1,24 @@
+
+<body>
+
+<!-- Flower animations -->
+<img class="flower flower1" src="path/to/flower.png" alt="Flower">
+<img class="flower flower2" src="path/to/flower.png" alt="Flower">
+<!-- Add more flower elements with different positions -->
+
+<!-- Card container -->
+<div class="card-container">
+    <div class="card" onclick="toggleTouchActive(this)">
+        <div class="card-face">Front</div>
+        <div class="card-face card-back">Back</div>
+    </div>
+</div>
+
+<script>
+    function toggleTouchActive(element) {
+        element.classList.toggle("touch-active");
+    }
+</script>
+
+</body>
+</html>

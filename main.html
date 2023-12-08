@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="toggleTouchActive(this)">
+            <div class="face">
+                <p>Happy Birth Day</p>
+                <img src="pics/gift.png" alt="flower" width="200px">
+                <div class="footer">press to open</div>
+            </div>
+            <div class="face back">
+                <p id="text">this is a simple draw as a gift and a thanks for teaching me how to draw</p>
+                <img src="pics/For Nozom.png" alt="Nozomi" width="90%" class="preview-image" onclick="showPreview()">
+                <div class="preview-overlay" onclick="hidePreview()">
+                <img src="pics/For Nozom.png" alt="Full Image" class="full-image">
+                </div>
+            </div>
+            <img src="pics/Flower.png" alt="flower" class="flower flower1">
+            <img src="pics/Flower.png" alt="flower" class="flower flower2">
+            
+        </div>
+       
+    </div>
+    <script src="script/script.js"></script>
+    <script>function toggleTouchActive(element) {
+        element.classList.toggle("touch-active");
+    }</script>
+
+</body>
