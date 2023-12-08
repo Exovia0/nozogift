@@ -53,7 +53,7 @@ body {
     position: relative; /* Changed to relative for proper positioning */
 }
 
-.card:hover, .card.touch-active {
+.card.touch-active {
     transform: rotateY(-180deg);
 }
 
