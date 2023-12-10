@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bday.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.block,
+.block2 {
+    text-align: center;
+}
+
+.frames,
+.frames2 {
+    width: 300px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.frames:hover,
+.frames2:hover {
+    transform: scale(1.05);
+}
+
+.frames img,
+.frames2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.frames p,
+.frames2 p {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.frames:nth-child(1),
+.frames:nth-child(2),
+.frames:nth-child(3),
+.frames2:nth-child(1),
+.frames2:nth-child(2),
+.frames2:nth-child(3) {
+    z-index: -1;
+}
+
+.frames:nth-child(1) {
+    background-color: #FF6F61;
+}
+
+.frames:nth-child(2) {
+    background-color: #FFD700;
+}
+
+.frames:nth-child(3) {
+    background-color: #DEB887;
+}
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .frames,
+    .frames2 {
+        width: 80%;
+        margin: 10px;
+    }
+}
