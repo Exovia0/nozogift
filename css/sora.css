@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+.messages-container {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow-y: scroll;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.message {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.message:last-child {
+    border-bottom: none; /* Remove border from the last message */
+}
+
+.message:hover {
+    background-color: #e6e6e6;
+}
+nav {
+    background-color: #888888; /* Initial gray color */
+    overflow: hidden;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    float: none; /* Remove the float property */
+    display: inline-block; /* Display links in a block */
+    border: #ffffffae solid;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+    
+nav a:hover {
+    background-color: #131313; /* Darker color on hover */
+}
+    

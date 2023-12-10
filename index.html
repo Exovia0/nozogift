@@ -8,36 +8,53 @@
 </head>
 <body>
     <div class="container">
+        
         <div class="card" onclick="toggleTouchActive(this)">
             <div class="face">
                 <p>Happy Birth Day</p>
                 <img src="pics/gift.png" alt="gift" width="200px">
-                <div class="footer">press to open</div>
+                <div class="footer">click twice to open</div>
             </div>
             <div class="face back">
                 <p id="text">this is a simple draw as a gift and a thanks for teaching me how to draw</p>
-                <img src="pics/For Nozom.png" alt="Nozomi" width="90%" class="preview-image" onclick="showPreview()">
+                <img src="pics/zakia.jpg" alt="Nozomi" class="imag" onclick="showPreview()">
                 <div class="preview-overlay" onclick="hidePreview()">
                 <img src="pics/For Nozom.png" alt="Full Image" class="full-image">
                 </div>
+                <p id="text">click the photo</p>
+                <audio controls>
+                    <source src="music/sx_602_14020919_172613101_10122023.mp3" type="audio/mp3">
+                </audio>
             </div>
             <img src="pics/flower.png" alt="flower" class="flower flower1">
             <img src="pics/flower.png" alt="flower" class="flower flower2">
             
         </div>
+      
         <nav>
             <a href="index.html">for you</a>
             <a href="wishes.html">wishes</a>
-            <a href="#">Link 3</a>
+            <a href="from sora.html">Messages</a>
         </nav>
+       
     </div>
-    
+   
    
     
     
     <script src="script/script.js"></script>
-    <script>function toggleTouchActive(element) {
-        element.classList.toggle("touch-active");
-    }</script>
+    <script src="script/script.js"></script>
+    <script>
+        let clickCount = 0;
+
+        function toggleTouchActive(element) {
+            clickCount++;
+
+            if (clickCount === 2) {
+                element.classList.toggle("touch-active");
+                clickCount = 0; // Reset click count after two clicks
+            }
+        }
+    </script>
 
 </body>
